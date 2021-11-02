@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sjtu-network</string>
+    <string name="send_request">Send Request By OKHttp</string>
+    <string name="send_request_retrofit">Send Request By Retrofit</string>
+    <string name="hello_android_network">Hello SJTU!</string>
+</resources>
