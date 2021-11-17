@@ -13,7 +13,6 @@
         android:name=".MyApplication"
         android:networkSecurityConfig="@xml/net_security_config"
         android:theme="@style/Theme.Sjtunetwork">
-        <activity android:name=".RetrofitActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

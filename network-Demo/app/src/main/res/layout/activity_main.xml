@@ -4,29 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+  >
+
 
     <Button
+        android:id="@+id/send_request"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:text="英转中"
         app:layout_constraintBottom_toTopOf="@+id/show_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/send_request"
-        android:id="@+id/send_request"/>
+        app:layout_constraintTop_toBottomOf="@id/edit_text"
+        android:backgroundTint= "#FF7F00"/>
 
     <TextView
         android:id="@+id/show_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="10dp"
-        android:text="@string/hello_android_network"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/send_request" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="输入英文单词"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
